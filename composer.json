@@ -7,5 +7,8 @@
             "name": "Panov Alexey",
             "email": "alexeykapanov@gmail.com"
         }
-    ]
+    ],
+    "require": {
+        "illuminate/support": "^7.9"
+    }
 }
