@@ -10,5 +10,10 @@
     ],
     "require": {
         "illuminate/support": "^7.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laravel\\YandexSpeller\\": "src/"
+        }
     }
 }
