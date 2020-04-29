@@ -1,0 +1,11 @@
+{
+    "name": "codeblog.pro/laravel-yandex-speller",
+    "description": "The package includes a tool for correcting typos of user-entered information using the Yandex.Speller service.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Panov Alexey",
+            "email": "alexeykapanov@gmail.com"
+        }
+    ]
+}
