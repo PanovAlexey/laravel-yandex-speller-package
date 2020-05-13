@@ -1,5 +1,6 @@
 {
     "name": "codeblog.pro/laravel-yandex-speller",
+    "license": "Apache-2.0",
     "description": "The package includes a tool for correcting typos of user-entered information using the Yandex.Speller service.",
     "type": "library",
     "authors": [
