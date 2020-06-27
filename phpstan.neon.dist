@@ -4,3 +4,12 @@ parameters:
     paths:
       - src
       - tests
+    excludes_analyse:
+      - src/Controller/YandexSpellerController.php
+    ignoreErrors:
+      - message: '#Function config_path not found.#'
+        path: src
+      - message: '#Function config not found.#'
+        path: src
+      - message: '#Function resolve not found.#'
+        path: src
