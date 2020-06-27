@@ -7,10 +7,9 @@ use Laravel\YandexSpeller\Application\Contracts\YandexSpellerInterface;
 use Laravel\YandexSpeller\Application\Models\Answer;
 use Laravel\YandexSpeller\Application\Services\YandexSpeller\YandexSpellerService;
 
-
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
-    public function register()
+    public function register(): void
     {
         parent::register();
 
@@ -18,7 +17,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
         $this->app->bind(AnswerInterface::class, Answer::class);
     }
 
-    public function boot()
+    public function boot(): void
     {
         $this->loadRoutesFrom(__DIR__ . '/../routes/yandex-speller.php');
         $this->publishes([
@@ -27,4 +26,4 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
         ]);
         $this->mergeConfigFrom(__DIR__ . '/../config/yandexspeller.php', 'yandexspeller');
     }
- }
+}

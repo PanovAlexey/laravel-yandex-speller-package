@@ -7,7 +7,8 @@ use Laravel\YandexSpeller\Application\Services\YandexSpeller\YandexSpellerServic
 
 class YandexSpellerController extends Controller
 {
-    public function index(?string $sourceString = '') {
+    public function index(?string $sourceString = '')
+    {
         if (!empty($sourceString)) {
             try {
                 $yandexSpellerService = resolve(YandexSpellerService::class);
@@ -40,7 +41,8 @@ class YandexSpellerController extends Controller
         return response()->json($result['body'], $result['status']);
     }
 
-    public function incorrectMethod() {
+    public function incorrectMethod()
+    {
         $result = [
             'status' => 405,
             'body' => ['error' => ['message' => 'Method Not Allowed']]

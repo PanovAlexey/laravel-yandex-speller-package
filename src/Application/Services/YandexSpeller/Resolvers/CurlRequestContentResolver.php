@@ -10,7 +10,7 @@ class CurlRequestContentResolver
      * @param array $optionsList
      * @return array
      */
-    function handle(string $url, array $postData = [], array $optionsList = [])
+    public function handle(string $url, array $postData = [], array $optionsList = []): array
     {
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);

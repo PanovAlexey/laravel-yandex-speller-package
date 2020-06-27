@@ -12,7 +12,7 @@ class YandexSpellerService implements YandexSpellerInterface
     public function getAnswerByString(string $sourceString): ?AnswerInterface
     {
         $yandexSpellerRequestResolver = resolve(CurlRequestContentResolver::class);
-        $curlContent =  $yandexSpellerRequestResolver->handle(
+        $curlContent = $yandexSpellerRequestResolver->handle(
             config('yandexspeller.yandex_speller_api_url'),
             [
                 'text' => $sourceString
@@ -25,7 +25,7 @@ class YandexSpellerService implements YandexSpellerInterface
 
         $correctedStringArray = [];
 
-        if (empty($curlContent['result']) || $curlContent['result'] === false) {
+        if (empty($curlContent['result']) || (bool)$curlContent['result'] === false) {
             return null;
         } else {
             $curlContentResult = json_decode($curlContent['result']);
@@ -35,7 +35,7 @@ class YandexSpellerService implements YandexSpellerInterface
             // @ToDo: Now the first correction is taken for each word. It is necessary to give the functional
             // of obtaining all possible permutations. Accordingly, $resultText will become an array
             foreach ($spellResult as $correction) {
-                if (empty($correction->s) || current($correction->s) === $sourceString) {
+                if (!isset($correction->word) || empty($correction->s) || current($correction->s) === $sourceString) {
                     continue;
                 }
 
@@ -43,7 +43,11 @@ class YandexSpellerService implements YandexSpellerInterface
             }
 
             if (!empty($correctionMap)) {
-                $correctedStringArray[] = str_replace(array_keys($correctionMap), array_values($correctionMap), $sourceString);
+                $correctedStringArray[] = str_replace(
+                    array_keys($correctionMap),
+                    array_values($correctionMap),
+                    $sourceString
+                );
             }
         }
 
