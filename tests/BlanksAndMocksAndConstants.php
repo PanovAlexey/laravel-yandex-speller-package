@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\YandexSpeller\Tests;
+namespace CodeblogPro\YandexSpeller\Tests;
 
 class BlanksAndMocksAndConstants
 {

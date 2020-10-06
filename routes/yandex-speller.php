@@ -1,6 +1,6 @@
 <?php
 use Illuminate\Support\Facades\Route;
-use Laravel\YandexSpeller\Controller\YandexSpellerController;
+use CodeblogPro\YandexSpeller\Controller\YandexSpellerController;
 
 Route::prefix('api')->middleware('api')->group(function() {
     Route::get('/yandex-speller/{sourceString?}', [YandexSpellerController::class, 'index']);

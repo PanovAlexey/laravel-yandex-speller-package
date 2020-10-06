@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravel\YandexSpeller\Application\Services\YandexSpeller;
+namespace CodeblogPro\YandexSpeller\Application\Services\YandexSpeller;
 
-use Laravel\YandexSpeller\Application\Contracts\AnswerInterface;
-use Laravel\YandexSpeller\Application\Contracts\YandexSpellerInterface;
-use Laravel\YandexSpeller\Application\Models\Answer;
-use Laravel\YandexSpeller\Application\Services\YandexSpeller\Resolvers\CurlRequestContentResolver;
+use CodeblogPro\YandexSpeller\Application\Contracts\AnswerInterface;
+use CodeblogPro\YandexSpeller\Application\Contracts\YandexSpellerInterface;
+use CodeblogPro\YandexSpeller\Application\Models\Answer;
+use CodeblogPro\YandexSpeller\Application\Services\YandexSpeller\Resolvers\CurlRequestContentResolver;
 
 class YandexSpellerService implements YandexSpellerInterface
 {

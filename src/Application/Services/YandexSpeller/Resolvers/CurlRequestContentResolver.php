@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\YandexSpeller\Application\Services\YandexSpeller\Resolvers;
+namespace CodeblogPro\YandexSpeller\Application\Services\YandexSpeller\Resolvers;
 
 class CurlRequestContentResolver
 {

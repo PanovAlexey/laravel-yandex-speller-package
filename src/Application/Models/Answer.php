@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\YandexSpeller\Application\Models;
+namespace CodeblogPro\YandexSpeller\Application\Models;
 
-use Laravel\YandexSpeller\Application\Contracts\AnswerInterface;
+use CodeblogPro\YandexSpeller\Application\Contracts\AnswerInterface;
 
 class Answer implements AnswerInterface
 {

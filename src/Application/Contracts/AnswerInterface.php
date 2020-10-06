@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\YandexSpeller\Application\Contracts;
+namespace CodeblogPro\YandexSpeller\Application\Contracts;
 
 /**
  * Interface AnswerInterface
- * @package Laravel\YandexSpeller\Application\Contracts
+ * @package CodeblogPro\YandexSpeller\Application\Contracts
  */
 interface AnswerInterface
 {

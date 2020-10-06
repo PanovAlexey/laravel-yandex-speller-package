@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravel\YandexSpeller;
+namespace CodeblogPro\YandexSpeller;
 
-use Laravel\YandexSpeller\Application\Contracts\AnswerInterface;
-use Laravel\YandexSpeller\Application\Contracts\YandexSpellerInterface;
-use Laravel\YandexSpeller\Application\Models\Answer;
-use Laravel\YandexSpeller\Application\Services\YandexSpeller\YandexSpellerService;
+use CodeblogPro\YandexSpeller\Application\Contracts\AnswerInterface;
+use CodeblogPro\YandexSpeller\Application\Contracts\YandexSpellerInterface;
+use CodeblogPro\YandexSpeller\Application\Models\Answer;
+use CodeblogPro\YandexSpeller\Application\Services\YandexSpeller\YandexSpellerService;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {

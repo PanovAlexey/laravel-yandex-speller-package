@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\YandexSpeller\Controller;
+namespace CodeblogPro\YandexSpeller\Controller;
 
 use Illuminate\Routing\Controller;
-use Laravel\YandexSpeller\Application\Services\YandexSpeller\YandexSpellerService;
+use CodeblogPro\YandexSpeller\Application\Services\YandexSpeller\YandexSpellerService;
 
 class YandexSpellerController extends Controller
 {

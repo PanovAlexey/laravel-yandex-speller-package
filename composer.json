@@ -1,11 +1,11 @@
 {
-    "name": "codeblog.pro/laravel-yandex-speller",
+    "name": "codeblog.pro/yandex-speller",
     "license": "Apache-2.0",
     "description": "The package includes a tool for correcting typos of user-entered information using the Yandex.Speller service.",
     "keywords": [
         "api", "yandex", "speller", "laravel"
     ],
-    "homepage": "https://github.com/PanovAlexey/laravel-yandex-speller-package",
+    "homepage": "https://github.com/PanovAlexey/yandex-speller-package",
     "type": "library",
     "authors": [
         {
@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Laravel\\YandexSpeller\\": "src/"
+            "CodeblogPro\\YandexSpeller\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Laravel\\YandexSpeller\\Tests\\": "tests/"
+            "CodeblogPro\\YandexSpeller\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -45,7 +45,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "\\Laravel\\YandexSpeller\\ServiceProvider"
+                "\\CodeblogPro\\YandexSpeller\\ServiceProvider"
             ]
         }
     }

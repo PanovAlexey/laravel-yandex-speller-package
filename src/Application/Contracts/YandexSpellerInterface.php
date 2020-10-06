@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\YandexSpeller\Application\Contracts;
+namespace CodeblogPro\YandexSpeller\Application\Contracts;
 
 interface YandexSpellerInterface
 {

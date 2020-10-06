@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Laravel\YandexSpeller\Tests\Unit;
+namespace CodeblogPro\YandexSpeller\Tests\Unit;
 
-use Laravel\YandexSpeller\Application\Models\Answer;
-use Laravel\YandexSpeller\Tests\BlanksAndMocksAndConstants;
+use CodeblogPro\YandexSpeller\Application\Models\Answer;
+use CodeblogPro\YandexSpeller\Tests\BlanksAndMocksAndConstants;
 
 class AnswerTest extends \PHPUnit\Framework\TestCase
 {
